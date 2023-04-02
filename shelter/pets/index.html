@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icons/favicon.ico">
+    <title>Shelter</title>
+    <script type="module" crossorigin src="../pets/pets.js"></script>
+    <link rel="modulepreload" crossorigin href="../script.js">
+    <link rel="stylesheet" href="../assets/index2.css">
+  </head>
+  <body>
+    <div id="root">
+      <header id="header" class="header">
+        <div class="wrapper">
+          <div class="header__wrapper">
+            <a class="logo" href="../main/">
+              <h1 class="logo__title">Cozy House</h1>
+              <span class="logo__sub">Shelter for pets in Boston</span>
+            </a>
+            <nav class="nav">
+              <input id="nav__toggle" type="checkbox">
+              <label class="nav__hamburger" for="nav__toggle">
+                <span></span>
+              </label>
+              <ul class="menu">
+                <li class="menu__item">
+                  <a class="menu__link" href="../main/">About the shelter</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="../pets/">Our pets</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="../main/#help">Help the shelter</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#footer">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="pets">
+          <div class="wrapper">
+            <div class="pets__wrapper">
+              <h3 class="pets__title">
+                <span>Our friends who</span>
+                <span>are looking for a house</span>
+              </h3>
+              <div class="slider">
+                <div class="slider__content">
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-katrine.png" alt="">
+                    <span>Katrine</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-jennifer.png" alt="">
+                    <span>Jennifer</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-woody.png" alt="">
+                    <span>Woody</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-sophia.png" alt="">
+                    <span>Sophia</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-timmy.png" alt="">
+                    <span>Timmy</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-charly.png" alt="">
+                    <span>Charly</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-scarlet.png" alt="">
+                    <span>Scarlett</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-freddie.png" alt="">
+                    <span>Freddie</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="pets__pag">
+                <button class="btn btn--trans btn--circle btn--disabled">&lt;&lt;</button>
+                <button class="btn btn--trans btn--circle btn--disabled">&lt;</button>
+                <button class="btn btn--trans btn--circle btn--active"><h4>1</h4></button>
+                <button class="btn btn--trans btn--circle">&gt;</button>
+                <button class="btn btn--trans btn--circle">&gt;&gt;</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer" class="footer">
+        <div class="wrapper">
+          <div class="footer__wrapper">
+            <div class="contacts">
+              <h3 class="contacts__title title--light">For questions and suggestions</h3>
+              <a class="contacts__link" href="mailto:email@shelter.com">
+                <img src="../assets/icons/email.svg" alt="">
+                <h4>email@shelter.com</h4>
+              </a>
+              <a class="contacts__link" href="tel:+136745677554">
+                <img src="../assets/icons/phone.svg" alt="">
+                <h4>+13 674 567 75 54</h4>
+              </a>
+            </div>
+            <div class="location">
+              <h3 class="location__title title--light">We are waiting for your visit</h3>
+              <a class="location__link" href="https://goo.gl/maps/hGa73WxpUvcvLtZNA" target="_blank">
+                <img src="../assets/icons/marker.svg" alt="">
+                <h4>1 Central Street, Boston (entrance from the store)</h4>
+              </a>
+              <a class="location__link" href="https://goo.gl/maps/zM1Xu9wvbPFmTTJW7" target="_blank">
+                <img src="../assets/icons/marker.svg" alt="">
+                <h4>18 South Park, London</h4>
+              </a>
+            </div>
+            <img class="footer__puppy" src="../assets/images/footer-puppy.png" alt="">
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    
+  </body>
+</html>
