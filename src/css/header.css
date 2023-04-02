@@ -1,0 +1,82 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo__title {
+  letter-spacing: 1.9px;
+  line-height: 35.1px;
+  color: #F1CDB3;
+  margin: 0 0 10px 0;
+  transition: all ease 0.50s;
+}
+
+.logo__sub {
+  font-family: Arial, serif;
+  font-size: 1.3rem;
+  letter-spacing: 1.3px;
+  color: #ffffff;
+}
+
+.logo:hover .logo__title {
+  color: #FDDCC4;
+}
+
+.logo:active .logo__title {
+  color: #F1CDB3;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+#nav__toggle {
+  display: none;
+}
+
+.nav__hamburger {
+}
+
+.menu {
+  display: flex;
+  gap: 35px;
+}
+
+.menu__item {
+}
+
+.menu__link {
+  font-family: Arial, serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+  color: #CDCDCD;
+  transition: all ease 0.50s;
+}
+
+.menu__link--act {
+  color: #FAFAFA;
+  border-bottom: 3px solid #F1CDB3;
+  padding-bottom: 2px;
+  pointer-events: none;
+}
+
+.menu__link:hover {
+  color: #FAFAFA;
+}
+
+.menu__link:active {
+  color: #CDCDCD;
+}

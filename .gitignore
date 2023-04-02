@@ -1,0 +1,11 @@
+# Blacklist files/folders in same directory as the .gitignore file
+/*
+
+# Whitelist
+!src/
+!.editorconfig
+!.gitignore
+!package.json
+!postcss.config.cjs
+!vite.config.js
+!README.md

@@ -1,0 +1,59 @@
+.footer {
+  background: url(../assets/images/noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 282px;
+  padding-top: 16px;
+}
+
+.contacts__title {
+
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #F1CDB3;
+  transition: all ease 0.50s;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  max-width: 302px;
+  padding-top: 16px;
+}
+
+.location__title {
+}
+
+.location__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #F1CDB3;
+  transition: all ease 0.50s;
+}
+
+.footer__puppy {
+}
+
+.contacts__link:hover, .location__link:hover {
+  color: #FDDCC4;
+}
+
+.contacts__link:active, .location__link:active {
+  color: #F1CDB3;
+}

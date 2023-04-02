@@ -1,0 +1,116 @@
+@import '../css/style.css';
+@import '../css/header.css';
+@import '../css/footer.css';
+
+.header {
+  background-color: #FFFFFF;
+}
+
+.logo__title {
+  color: #545454;
+}
+
+.logo__sub {
+  color: #292929;
+}
+
+.logo:hover .logo__title {
+  color: #292929;
+}
+
+.logo:active .logo__title {
+  color: #545454;
+}
+
+.menu__link {
+  color: #545454;
+}
+
+.menu__link--act {
+  color: #545454;
+}
+
+.menu__link:hover {
+  color: #292929;
+}
+
+.menu__link:active {
+  color: #545454;
+}
+
+.pets {
+  background-color: #F6F6F6;
+}
+
+.pets__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 59px;
+  padding: 200px 0 101px 0;
+}
+
+.pets__title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #545454;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider__content {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  column-gap: 40px;
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 30px;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+  transition: all ease 0.50s;
+}
+
+.slider__item img {
+  border-radius: 9px 9px 0 0;
+}
+
+.slider__item span {
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  #line-height: 22.72px;
+  color: #545454;
+}
+
+.slider__item:hover {
+  cursor: pointer;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.slider__item:hover > .btn--trans {
+  background-color: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+
+.slider__item:active > .btn--trans{
+  background-color: #F1CDB3;
+  border: 2px solid #F1CDB3;
+}
+
+.pets__pag {
+  display: flex;
+  gap: 20px;
+}
