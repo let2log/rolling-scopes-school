@@ -227,6 +227,14 @@
   max-width: 349px;
 }
 
+.donation__button span {
+  font-family: 'Georgia', serif;
+  font-size: var(--heading-4);
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  line-height: 23px;
+}
+
 .donation__p {
   font-size: 1.2rem;
   font-style: italic;
