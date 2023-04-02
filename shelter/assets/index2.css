@@ -948,3 +948,11 @@ ul {
   display: flex;
   gap: 20px;
 }
+
+.pets__pag span {
+  font-family: 'Georgia', serif;
+  font-size: var(--heading-4);
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  line-height: 23px;
+}
