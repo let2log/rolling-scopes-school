@@ -11,7 +11,8 @@
 
 .start__wrapper {
   display: flex;
-  #align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 42px;
   padding-top: 180px;
 }
@@ -19,12 +20,13 @@
 .start__text {
   display: flex;
   flex-direction: column;
+  max-width: 460px;
   margin-top: 163px;
   gap: 42px;
 }
 
 .start__text .btn {
-  max-width: 207px;
+  max-width: 209px;
 }
 
 .start__title {
@@ -46,16 +48,18 @@
 
 .about__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
   gap: 120px;
-  padding: 80px 175px 100px 175px;
+  #padding: 80px 175px 100px 175px;
+  margin: 80px auto 100px auto;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  #max-width: 430px;
+  max-width: 430px;
   margin-top: 14px;
 }
 
@@ -67,7 +71,7 @@
 .about__p {
   color: #4C4C4C;
   line-height: 24px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 
 .pets {
@@ -118,7 +122,7 @@
 }
 
 .slider__item span {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-weight: 400;
   font-size: 2rem;
   letter-spacing: 1px;
@@ -192,27 +196,29 @@
 
 .donation__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
   gap: 30px;
-  padding: 80px 142px 100px 143px;
+  padding: 80px 0 100px 0;
 }
 
 .donation__img {
-  margin-top: 10px;
-  height: 100%;
+
 }
 
 .donation__text {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  #max-width: 380px;
+  max-width: 380px
 }
 
 .donation__title {
   max-width: 311px;
   line-height: 44.5px;
   letter-spacing: 2px;
+  color: #545454;
 }
 
 .donation__sub {
@@ -228,7 +234,7 @@
 }
 
 .donation__button span {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: var(--heading-4);
   font-weight: 400;
   letter-spacing: 1.1px;
@@ -241,4 +247,57 @@
   line-height: 18px;
   letter-spacing: -0.2px;
   color: #B2B2B2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .start__wrapper {
+    padding-top: 150px;
+    gap: 100px;
+  }
+
+  .start__wrapper img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 140px;
+  }
+
+  .start__text {
+    #max-width: 460px;
+    margin: 0;
+  }
+
+  .start__text .btn {
+    margin: 0 auto;
+  }
+
+  .about__wrapper {
+    gap: 80px;
+  }
+
+  .about__text {
+    margin: 0;
+  }
+
+  .slider__content {
+    max-width: 708px;
+    gap: 40px;
+    margin: 0 12px;
+  }
+
+  .slider__item:nth-last-child(1) {
+    display: none;
+  }
+
+  .help__item {
+    #min-width: 170px;
+    min-width: 24%;
+    margin: 57px 30px 0 30px;
+  }
+
+  .donation__wrapper {
+    justify-content: center;
+    padding: 80px 0 100px 0;
+    gap: 60px;
+  }
+
 }

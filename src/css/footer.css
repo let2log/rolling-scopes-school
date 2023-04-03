@@ -4,6 +4,7 @@
 
 .footer__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 40px;
 }
@@ -12,7 +13,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  max-width: 282px;
+  max-width: 283px;
   padding-top: 16px;
 }
 
@@ -56,4 +57,22 @@
 
 .contacts__link:active, .location__link:active {
   color: #F1CDB3;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer__wrapper {
+    padding-top: 30px;
+    justify-content: space-around;
+    gap: 64px;
+    column-gap: 0;
+  }
+
+  .contacts {
+    padding-top: 0;
+  }
+
+  .location {
+    padding-top: 0;
+  }
 }

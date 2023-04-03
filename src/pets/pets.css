@@ -66,6 +66,7 @@
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   column-gap: 40px;
 }
@@ -86,7 +87,7 @@
 }
 
 .slider__item span {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-weight: 400;
   font-size: 2rem;
   letter-spacing: 1px;
@@ -121,4 +122,19 @@
   font-weight: 400;
   letter-spacing: 1.1px;
   line-height: 23px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .pets__wrapper {
+    gap: 0;
+    padding-bottom: 76px;
+  }
+
+  .slider__content {
+    margin: 29px 0 40px 0;
+  }
+
+  .slider__item:nth-child(+n+7) {
+    display: none;
+  }
 }
