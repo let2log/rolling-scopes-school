@@ -138,3 +138,33 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 310px) and (max-width: 767px) {
+  .nav__hamburger > span,
+  .nav__hamburger > span::before,
+  .nav__hamburger > span::after {
+    background-color: #000000;
+  }
+
+  .pets__wrapper {
+    padding: 162px 0 42px 0;
+    gap: 42px;
+  }
+
+  .pets__title {
+    letter-spacing: 1.5px;
+  }
+
+  .pets__pag {
+    gap: 10px;
+  }
+
+  .pets__pag span {
+    font-size: 2rem;
+  }
+
+  .slider__item:nth-child(n+4) {
+    display: none;
+  }
+
+}

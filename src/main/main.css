@@ -52,7 +52,7 @@
   flex-wrap: wrap-reverse;
   gap: 120px;
   #padding: 80px 175px 100px 175px;
-  margin: 80px auto 100px auto;
+  padding: 80px 0 100px 0;
 }
 
 .about__text {
@@ -257,12 +257,10 @@
 
   .start__wrapper img {
     max-width: 100%;
-    height: auto;
     padding-left: 140px;
   }
 
   .start__text {
-    #max-width: 460px;
     margin: 0;
   }
 
@@ -298,6 +296,154 @@
     justify-content: center;
     padding: 80px 0 100px 0;
     gap: 60px;
+  }
+
+}
+
+@media screen and (min-width: 310px) and (max-width: 767px) {
+  .start__wrapper {
+    padding-top: 150px;
+    gap: 105px;
+  }
+
+  .start__wrapper img {
+    max-width: 100%;
+    padding-left: 40px;
+  }
+
+  .start__text {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .start__title {
+    line-height: 32px;
+    letter-spacing: 1.6px;
+  }
+
+  .start__title span {
+    display: block;
+  }
+
+  .start__p {
+    text-align: center;
+  }
+
+  .about__wrapper {
+    gap: 42px;
+    padding: 42px 0 42px 0;
+  }
+
+  .about__wrapper img {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .about__text {
+    margin-top: 0;
+    text-align: justify;
+    padding: 0 15px;
+  }
+
+  .about__title {
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+
+  .pets__wrapper {
+    gap: 42px;
+    padding: 42px 0;
+  }
+
+  .pets__title {
+    letter-spacing: 1.5px;
+    line-height: 31px;
+  }
+
+  .slider {
+    gap: 20px;
+    column-gap: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .slider > .slider__content {
+    flex: 1;
+    order: 1;
+    overflow: visible;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .slider__item:nth-child(2n+0) {
+    display: none;
+  }
+
+  .slider__item:nth-child(3n+0) {
+    display: none;
+  }
+
+  .slider__button {
+    order: 2;
+  }
+
+  .help__wrapper {
+    padding: 42px 0;
+  }
+
+  .help__title {
+    letter-spacing: 1.6px
+  }
+
+  .help__title span {
+    display: block;
+  }
+
+  .help__list {
+    padding: 12px 5px 0 5px;
+    justify-content: space-between;
+  }
+
+  .help__item {
+    gap: 14px;
+    margin: 30px 0 0 0;
+    min-width: 45%;
+  }
+
+  .help__item img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .donation__wrapper {
+    gap: 42px;
+    padding: 42px 0;
+  }
+
+  .donation__text {
+    align-items: center;
+    text-align: center;
+    #padding: 0 10px;
+  }
+
+  .donation__title {
+    line-height: 32px;
+    letter-spacing: 1.5px;
+  }
+
+  .donation__title span {
+    display: block;
+  }
+
+  .donation__p {
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .donation__img {
+    width: 100%;
+    padding: 0 20px;
   }
 
 }

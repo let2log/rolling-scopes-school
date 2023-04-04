@@ -82,6 +82,11 @@
 }
 
 @media screen and (min-width: 310px) and (max-width: 767px) {
+  .header__wrapper {
+    justify-content: space-around;
+    gap: 40px;
+  }
+
   #nav__toggle {
     opacity: 0;
     position: fixed;
@@ -96,7 +101,7 @@
     width: 30px;
     height: 26px;
     cursor: pointer;
-    margin-right: 43px;
+    #margin-right: 43px;
     #z-index: 1;
   }
 

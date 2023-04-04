@@ -76,3 +76,50 @@
     padding-top: 0;
   }
 }
+
+@media screen and (min-width: 310px) and (max-width: 767px) {
+  .footer__wrapper {
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    gap: 40px;
+  }
+
+  .contacts {
+    padding: 0;
+  }
+
+  .location {
+    gap: 40px;
+    padding: 0;
+  }
+
+  .contacts__title {
+    letter-spacing: 1.5px;
+  }
+
+  .location__title {
+    letter-spacing: 1.9px;
+  }
+
+  .contacts__link {
+    justify-content: center;
+  }
+
+  .contacts__link h4 {
+    font-size: 2rem;
+  }
+
+  .location__link {
+    text-align: left;
+  }
+
+  .location__link h4 {
+    font-size: 2rem;
+  }
+
+  .footer__puppy {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
