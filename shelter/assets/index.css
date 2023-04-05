@@ -854,7 +854,6 @@ ul {
 }
 
 .location__title {
-  max-width: 300px;
 }
 
 .location__link {
@@ -1521,6 +1520,7 @@ ul {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    max-width: 270px;
   }
 
   .slider > .slider__content {
