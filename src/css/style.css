@@ -1,7 +1,7 @@
 @import 'normalize.css';
 
 @font-face {
-  font-family: "Arial", sans-serif;
+  font-family: Arial;
   font-style: normal;
   font-weight: 400;
   src: local(""),
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: "Georgia", serif;
+  font-family: Georgia;
   font-style: normal;
   font-weight: 400;
   src: local(""),

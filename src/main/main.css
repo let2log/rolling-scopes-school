@@ -245,7 +245,6 @@
   font-size: 1.2rem;
   font-style: italic;
   line-height: 18px;
-  letter-spacing: -0.2px;
   color: #B2B2B2;
 }
 
@@ -366,6 +365,7 @@
     column-gap: 80px;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 270px;
   }
 
   .slider > .slider__content {
