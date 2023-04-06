@@ -356,7 +356,7 @@ template {
 }
 
 @font-face {
-  font-family: "Arial", sans-serif;
+  font-family: Arial;
   font-style: normal;
   font-weight: 400;
   src: local(""),
@@ -364,7 +364,7 @@ template {
 }
 
 @font-face {
-  font-family: "Georgia", serif;
+  font-family: Georgia;
   font-style: normal;
   font-weight: 400;
   src: local(""),
@@ -1383,7 +1383,6 @@ ul {
   font-size: 1.2rem;
   font-style: italic;
   line-height: 18px;
-  letter-spacing: -0.2px;
   color: #B2B2B2;
 }
 
