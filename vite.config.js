@@ -10,6 +10,7 @@ export default defineConfig({
     emptyOutDir: true,
     polyfillModulePreload: false,
     minify: false,
+    target: 'esnext',
     rollupOptions: {
       input: {
         'main/main': resolve('./src/main/index.html'),
@@ -19,11 +20,11 @@ export default defineConfig({
 
       output: {
         entryFileNames: '[name].js',
-        
+
         assetFileNames: ({name}) => {
-          
+
           if (/\.css$/.test(name ?? '')) {
-            return 'assets/[name][extname]';   
+            return 'assets/[name][extname]';
           }
 
           if (/\.(ttf|woff|woff2)$/.test(name ?? '')) {
@@ -37,7 +38,7 @@ export default defineConfig({
           if (/\.(png|jpe?g)$/.test(name ?? '')) {
             return 'assets/images/[name][extname]';
           }
-          
+
           return 'assets/[name]-[hash][extname]';
         },
 
