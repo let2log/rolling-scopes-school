@@ -1,12 +1,20 @@
 const response = await fetch('../assets/pets.json');
 const petsData = await response.json();
 
-const menuLink = document.querySelectorAll('.menu__link');
-document.querySelectorAll('.slider__item');
-const sliderContent = document.querySelector('.slider__content');
+const overlay = document.querySelector('.overlay');
+
 const popup = document.querySelector('.popup');
 
+const menuLink = document.querySelectorAll('.menu__link');
+
+document.querySelectorAll('.slider__item');
+const sliderContent = document.querySelector('.slider__content');
+
 let petsId;
+
+//////////////////////////////
+
+//////////////////////////////
 
 function showMenu() {
   if (document.querySelector('#nav__toggle').checked) {
@@ -18,15 +26,21 @@ function showMenu() {
 }
 
 function showOverlay() {
-  document.querySelector('.overlay').classList.add('overlay__show');
+  overlay.classList.add('overlay__show');
   document.documentElement.style.overflow = 'hidden';
+  if (navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i)) {
+    document.documentElement.style.paddingRight = '0';
+  } else {
+    document.documentElement.style.paddingRight = '15px';
+  }
 }
 
 function hideOverlay() {
-  document.querySelector('.overlay').classList.remove('overlay__show');
+  overlay.classList.remove('overlay__show');
   document.documentElement.style.overflow = 'visible';
   document.querySelector('#nav__toggle').checked = false;
-  document.querySelector('.popup').classList.remove('popup__show');
+  popup.classList.remove('popup__show');
+  document.documentElement.style.paddingRight = '0';
 }
 
 function generatePopup(petsData) {
@@ -50,11 +64,11 @@ function generatePopup(petsData) {
 }
 
 function showPopup() {
-  if (document.querySelector('.popup').classList.contains('popup__show')) {
+  if (popup.classList.contains('popup__show')) {
     hideOverlay();
   } else {
     showOverlay();
-    document.querySelector('.popup').classList.add('popup__show');
+    popup.classList.add('popup__show');
   }
 }
 
@@ -66,6 +80,10 @@ menuLink.forEach((elem) => {
   elem.addEventListener('click', hideOverlay);
 
 });
+
+//////////////////////////////
+
+//////////////////////////////
 
 
 sliderContent.onclick = function(event) {
@@ -82,5 +100,5 @@ popup.onclick = function(event) {
   hideOverlay();
 };
 
-document.querySelector('.overlay').addEventListener('click', hideOverlay);
+overlay.addEventListener('click', hideOverlay);
 document.querySelector('#nav__toggle').addEventListener('change', showMenu);
