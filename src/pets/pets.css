@@ -83,11 +83,12 @@
 }
 
 .slider__item img {
+  max-width: 270px;
   border-radius: 9px 9px 0 0;
 }
 
 .slider__item span {
-  font-family: "Georgia", serif;
+  font-family: Georgia;
   font-weight: 400;
   font-size: 2rem;
   letter-spacing: 1px;
@@ -117,7 +118,7 @@
 }
 
 .pets__pag span {
-  font-family: 'Georgia', serif;
+  font-family: Georgia;
   font-size: var(--heading-4);
   font-weight: 400;
   letter-spacing: 1.1px;
@@ -140,6 +141,10 @@
 }
 
 @media screen and (min-width: 310px) and (max-width: 767px) {
+  .menu {
+    background-color: #FFFFFF;
+  }
+
   .nav__hamburger > span,
   .nav__hamburger > span::before,
   .nav__hamburger > span::after {

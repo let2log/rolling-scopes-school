@@ -1,7 +1,7 @@
 @import 'normalize.css';
 
 @font-face {
-  font-family: Arial;
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   src: local(""),
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: Georgia;
+  font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
   src: local(""),
@@ -46,6 +46,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  #width: 100vw;
 }
 
 a {
@@ -53,21 +54,21 @@ a {
 }
 
 h1 {
-  font-family: "Georgia", serif;
+  font-family: Georgia;
   font-size: var(--heading-1);
   font-weight: 400;
   letter-spacing: 1.5px;
 }
 
 h2 {
-  font-family: "Georgia", serif;
+  font-family: Georgia;
   font-size: var(--heading-2);
   font-weight: 400;
   line-height: 57.2px;
 }
 
 h3 {
-  font-family: "Georgia", serif;
+  font-family: Georgia;
   font-size: var(--heading-3);
   font-weight: 400;
   letter-spacing: 2.2px;
@@ -75,7 +76,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Georgia", serif;
+  font-family: Georgia;
   font-size: var(--heading-4);
   font-weight: 400;
   letter-spacing: 1.1px;
@@ -83,7 +84,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Georgia", serif;
+  font-family: Georgia;
   font-size: var(--heading-5);
   font-weight: 400;
   line-height: 16.5px;
@@ -92,7 +93,7 @@ h5 {
 }
 
 p {
-  font-family: "Arial", sans-serif;
+  font-family: Arial;
   font-size: var(--paragraph);
   font-weight: 400;
 }
@@ -102,7 +103,103 @@ img {
 }
 
 ul {
-  list-style-type: none;
+
+}
+
+.disable__scroll {
+  padding-right: 17px;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 10;
+  top: -9999px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.6);
+  opacity: 0;
+  transition: ease opacity 0.5s;
+}
+
+.overlay__show {
+  top: 0;
+  opacity: 1;
+}
+
+.popup {
+  position: fixed;
+  z-index: 11;
+  top: -9999px;
+  left: 0;
+  transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+  max-width: 900px;
+  border-radius: 9px;
+  background: #FAFAFA;
+  opacity: 0;
+  transition: ease opacity 0.5s;
+}
+
+.popup__show {
+  top: 0;
+  opacity: 1;
+}
+
+.popup__close {
+  position: absolute;
+  right: -42px;
+  top: -52px;
+}
+
+.popup__wrapper {
+  display: flex;
+  gap: 30px;
+  padding-right: 19px;
+}
+
+.popup__img {
+  max-width: 500px;
+  border-radius: 9px 0px 0px 9px;
+
+}
+
+.popup__text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 50px;
+}
+
+.popup__sub {
+  margin-top: -30px;
+}
+
+.popup__p {
+  font-family: Georgia;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  line-height: 16.5px;
+}
+
+.popup__list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  font-family: Georgia;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1.9px;
+  padding-left: 14px;
+}
+
+.popup__list li::marker {
+  color: #F1CDB3;
+}
+
+.popup__list span {
+  font-weight: 700;
 }
 
 .wrapper {
@@ -115,7 +212,7 @@ ul {
 }
 
 .btn {
-  font-family: "Georgia", serif;
+  font-family: Georgia;
   font-size: 1.7rem;
   letter-spacing: 0.9px;
   line-height: 22px;
@@ -180,6 +277,42 @@ ul {
     margin: 0 30px;
   }
 
+  .popup {
+    max-width: 630px;
+  }
+
+  .popup__close {
+    right: -43px;
+  }
+
+  .popup__wrapper {
+    gap: 11px;
+    padding-right: 9px;
+  }
+
+  .popup__img {
+    max-width: 350px;
+  }
+
+  .popup__text {
+    padding-top: 10px;
+    gap: 20px;
+  }
+
+  .popup__sub {
+    margin-top: -10px;
+  }
+
+  .popup__p {
+    font-size: 1.3rem;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+  }
+
+  .popup__list {
+    line-height: 12px;
+  }
+
 }
 
 @media screen and (min-width: 310px) and (max-width: 767px) {
@@ -206,8 +339,55 @@ ul {
     letter-spacing: -0.1px;
   }
 
-    .wrapper {
-      margin: 0 10px;
+  .wrapper {
+    margin: 0 10px;
+  }
+
+   .popup {
+    max-width: 240px;
+  }
+
+  .popup__close {
+    right: -30px;
+  }
+
+  .popup__wrapper {
+    padding-right: 0;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .popup__img {
+    max-width: 350px;
+    display: none;
+  }
+
+  .popup__text {
+    padding-top: 0;
+    gap: 20px;
+  }
+
+  .popup__title {
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 45.5px;
+  }
+
+  .popup__sub {
+    font-size: 2rem;
+    margin-top: -10px;
+    text-align: center;
+  }
+
+  .popup__p {
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+  }
+
+  .popup__list {
+    margin-top: 4px;
+    line-height: 12px;
   }
 
 }

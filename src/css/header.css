@@ -24,7 +24,7 @@
 }
 
 .logo__sub {
-  font-family: "Arial", sans-serif;
+  font-family: Arial;
   font-size: 1.3rem;
   letter-spacing: 1.3px;
   color: #ffffff;
@@ -53,13 +53,14 @@
 .menu {
   display: flex;
   gap: 35px;
+  list-style-type: none;
 }
 
 .menu__item {
 }
 
 .menu__link {
-  font-family: "Arial", sans-serif;
+  font-family: Arial;
   font-size: 1.5rem;
   letter-spacing: 0.3px;
   color: #CDCDCD;
@@ -70,6 +71,7 @@
   color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;
   padding-bottom: 2px;
+  cursor: default;
   pointer-events: none;
 }
 
@@ -95,14 +97,11 @@
   .nav__hamburger {
     display: flex;
     align-items: center;
-    #position: fixed;
-    #top: 47px;
-    #left: 240px;
     width: 30px;
     height: 26px;
     cursor: pointer;
-    #margin-right: 43px;
-    #z-index: 1;
+    z-index: 12;
+    transition: all ease 0.5s;
   }
 
   .nav__hamburger > span,
@@ -114,6 +113,7 @@
     height: 2px;
     background-color: #F1CDB3;
   }
+
   .nav__hamburger > span::before {
     content: '';
     top: -10px;
@@ -125,18 +125,39 @@
 
   .menu {
     flex-direction: column;
+    gap: 40px;
     position: fixed;
-    right: -100%;
+    right: -9999px;
     top: 0;
-    visibility: hidden;
     width: 320px;
-    #height: 100%;
     margin: 0;
-    #padding: 30px 0;
+    padding: 248px 0 246px 0;
     text-align: center;
     background-color: #292929;
-    #box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    z-index: 1;
+    z-index: 11;
+    transition: all ease 2s;
   }
+
+
+  #nav__toggle:checked ~ .nav__hamburger{
+    transform: rotate(90deg);
+    transition: all ease 0.5s;
+  }
+
+  #nav__toggle:checked ~ .menu {
+    right: 0;
+    transition: all ease 0.5s;
+  }
+
+  .menu__link {
+    font-family: Arial;
+    font-size: 3.2rem;
+    line-height: 52px;
+  }
+
+  .menu__link--act {
+    padding-bottom: 6px;
+  }
+
 
 }
