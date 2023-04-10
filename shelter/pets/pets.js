@@ -1,2 +1,3 @@
-import "../script.js";
-const pets = "";
+import '../script.js';
+
+const pets = '';

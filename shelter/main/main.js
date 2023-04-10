@@ -1,2 +1,3 @@
-import "../script.js";
-const main = "";
+import '../script.js';
+
+const main = '';
