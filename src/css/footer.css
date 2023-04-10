@@ -4,6 +4,7 @@
 
 .footer__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 40px;
 }
@@ -12,7 +13,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  max-width: 282px;
+  max-width: 283px;
   padding-top: 16px;
 }
 
@@ -56,4 +57,69 @@
 
 .contacts__link:active, .location__link:active {
   color: #F1CDB3;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer__wrapper {
+    padding-top: 30px;
+    justify-content: space-around;
+    gap: 64px;
+    column-gap: 0;
+  }
+
+  .contacts {
+    padding-top: 0;
+  }
+
+  .location {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 310px) and (max-width: 767px) {
+  .footer__wrapper {
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    gap: 40px;
+  }
+
+  .contacts {
+    padding: 0;
+  }
+
+  .location {
+    gap: 40px;
+    padding: 0;
+  }
+
+  .contacts__title {
+    letter-spacing: 1.5px;
+  }
+
+  .location__title {
+    letter-spacing: 1.9px;
+  }
+
+  .contacts__link {
+    justify-content: center;
+  }
+
+  .contacts__link h4 {
+    font-size: 2rem;
+  }
+
+  .location__link {
+    text-align: left;
+  }
+
+  .location__link h4 {
+    font-size: 2rem;
+  }
+
+  .footer__puppy {
+    max-width: 100%;
+    padding: 0 20px;
+  }
 }
