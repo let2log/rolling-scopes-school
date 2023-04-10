@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icons/favicon.ico">
+    <title>Shelter</title>
+  </head>
+  <body>
+    <div id="root">
+      {{> header }}
+      <main class="main">
+        <section class="pets">
+          <div class="wrapper">
+            <div class="pets__wrapper">
+              <h3 class="pets__title">
+                <span>Our friends who</span>
+                <span>are looking for a house</span>
+              </h3>
+              <div class="slider">
+                <div class="slider__content">
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-katrine.png" alt="">
+                    <span>Katrine</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-jennifer.png" alt="">
+                    <span>Jennifer</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-woody.png" alt="">
+                    <span>Woody</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-sophia.png" alt="">
+                    <span>Sophia</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-timmy.png" alt="">
+                    <span>Timmy</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-charly.png" alt="">
+                    <span>Charly</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-scarlet.png" alt="">
+                    <span>Scarlett</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                  <div class="slider__item">
+                    <img src="../assets/images/pets-freddie.png" alt="">
+                    <span>Freddie</span>
+                    <button class="btn btn--trans">Learn more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="pets__pag">
+                <button class="btn btn--trans btn--circle btn--disabled">&lt;&lt;</button>
+                <button class="btn btn--trans btn--circle btn--disabled">&lt;</button>
+                <button class="btn btn--trans btn--circle btn--active"><span>1</span></button>
+                <button class="btn btn--trans btn--circle">&gt;</button>
+                <button class="btn btn--trans btn--circle">&gt;&gt;</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      {{> footer }}
+    </div>
+    <script type="module" src="./pets.js"></script>
+    <script type="module" src="../script.js"></script>
+  </body>
+</html>
