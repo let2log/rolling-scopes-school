@@ -28,13 +28,10 @@ function showMenu() {
 }
 
 function showOverlay() {
+  let scrollSize = window.innerWidth - document.documentElement.clientWidth;
   overlay.classList.add('overlay__show');
   document.documentElement.style.overflow = 'hidden';
-  if (navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i)) {
-    document.documentElement.style.paddingRight = '0';
-  } else {
-    document.documentElement.style.paddingRight = '15px';
-  }
+  document.documentElement.style.paddingRight = `${scrollSize}px`;
 }
 
 function hideOverlay() {

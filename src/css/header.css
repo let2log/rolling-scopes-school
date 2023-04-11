@@ -85,7 +85,7 @@
 
 @media screen and (min-width: 310px) and (max-width: 767px) {
   .header__wrapper {
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 40px;
   }
 
@@ -99,6 +99,7 @@
     align-items: center;
     width: 30px;
     height: 26px;
+    margin-right: 10px;
     cursor: pointer;
     z-index: 12;
     transition: all ease 0.5s;
@@ -130,6 +131,7 @@
     right: -9999px;
     top: 0;
     width: 320px;
+    height: 100vh;
     margin: 0;
     padding: 248px 0 246px 0;
     text-align: center;
